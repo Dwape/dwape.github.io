@@ -7,7 +7,9 @@ function getLocation() {
         // Get the positioning coordinates.
         var lat = position.coords.latitude;
         var lon = position.coords.longitude;
-        alert(lat);
-        alert(lon);
+        //alert(lat);
+        //alert(lon);
+        document.getElementById("latitude").innerHTML = lat;
+        document.getElementById("longitude").innerHTML = lon;
     });
 }

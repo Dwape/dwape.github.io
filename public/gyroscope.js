@@ -40,3 +40,10 @@ if (window.DeviceMotionEvent != undefined) {
 
     }, 25);
 }
+
+window.addEventListener("deviceorientation", function(event) {
+    // process event.alpha, event.beta and event.gamma
+    document.getElementById("orientationAlpha").innerHTML = event.alpha;
+    document.getElementById("orientationBeta").innerHTML = event.beta;
+    document.getElementById("orientationGamma").innerHTML = event.gamma;
+}, true);
